@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            min-height: 100px;
+            width: 100%;
+            color: black;
+            background-color: white;
+            display: flex;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        a1 {
+            color: rgb(77, 76, 76);
+        }
+
+        a1:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .mod {
+            display: flex;
+            width: 100%;
+            height: 370px;
+            min-height: 30%;
+            background-color: #e9e2d6;
+        }
+
+        .modleft {
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .modleft img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .free {
+            position: absolute;
+            top: 0.1%;
+            left: 20%;
+            font-size: 410%;
+            color: #006747;
+            margin: 0;
+        }
+
+        .monday {
+            position: absolute;
+            bottom: -5px;
+            left: 25%;
+            font-size: 410%;
+            color: #006747;
+            margin: 0;
+        }
+
+        .modright {
+            width: 50%;
+            text-align: center;
+            padding: 45px 30px;
+            box-sizing: border-box;
+            color: #006747;
+        }
+
+        .modright h2 {
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        .modright p {
+            font-size: 100%;
+        }
+
+        .modright button {
+            margin-top: 15px;
+            padding: 8px 20px;
+            border: 1px solid #006747;
+            border-radius: 25px;
+            background-color: transparent;
+            color: #006747;
+            font-size: 16px;
+        }
+        .footer {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .container a {
+                margin: 5px !important;
+            }
+            .container button {
+                margin: 5px !important;
+            }
+            .container img {
+                max-width: 100%;
+            }
+            .container2 {
+                flex-direction: column;
+            }
+            .container2 div {
+                width: 100% !important;
+                box-sizing: border-box;
+            }
+            .right {
+                width: 100%;
+                height: 300px;
+            }
+            .left {
+                width: 100%;
+                height: 300px;
+            }
+            .mod {
+                flex-direction: column;
+                height: auto;
+            }
+            .modleft {
+                width: 100%;
+                height: 300px;
+            }
+            .modright {
+                width: 100%;
+                padding: 30px 20px;
+            }
+            .free {
+                font-size: 250%;
+                left: 10%;
+            }
+            .monday {
+                font-size: 250%;
+                left: 15%;
+            }
+            .footer {
+                flex-direction: column;
+                padding: 30px !important;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Assignment 1</title>
+</head>
+<body>
+    <div class="container">
+        <img src="Picture1.png" height="100" width="210"
+             alt="Starbucks Logo">
+
+        <a href="https://www.starbucks.com/menu"
+           style="color:black; margin-top:30px;">
+            <h3>Menu</h3>
+        </a>
+
+        <a href="https://www.starbucks.com/rewards"
+           style="margin:20px; margin-top:30px; color:black;">
+            <h3>Rewards</h3>
+        </a>
+
+        <a href="https://www.starbucks.com/gift"
+           style="margin:15px; margin-top:30px; color:black;">
+            <h3>GiftCards</h3>
+        </a>
+
+        <a href="https://www.starbucks.com/store-locator"
+           style="margin-left:26%; margin-top:30px; color:black;">
+            <h3>Find a Cafe</h3>
+        </a>
+
+        <button style="margin:30px; outline:1px solid black;
+        background-color:white; width:100px; height:30px;
+        border-radius:9999px; border:none; margin-left:70px;
+        margin-top:40px; color:black;">
+            Sign In
+        </button>
+
+        <button style="margin:30px; outline:1px solid black;
+        background-color:rgb(17,16,16); width:100px;
+        height:30px; border-radius:9999px; border:none;
+        margin-left:30px; margin-top:40px; color:white;">
+            Join Now
+        </button>
+    </div>
+
+    <div style="padding:20px; background-color:rgb(49,65,6)">
+        <h2 style="text-align:center; color:white;">
+            It's a great day for coffee
+
+            <button style="font-size:large; outline:2px solid white;
+            background-color:rgb(49,65,6); width:150px;
+            height:40px; border-radius:9999px;
+            margin-left:30px; border:none; color:white;">
+                <b>Start and Order</b>
+            </button>
+        </h2>
+    </div>
+
+    <br>
+
+    <div class="mod">
+
+        <div class="modleft">
+            <img src="img1.jpeg" alt="Coffee drink">
+
+            <h1 class="free">FREE MOD</h1>
+            <h1 class="monday">MONDAY</h1>
+        </div>
+
+        <div class="modright">
+            <h2>On 10/5, customize a drink for $0</h2>
+
+            <p>
+                Try a new cold foam, or let us cover
+                your usual add-on when you join Starbucks®
+                Rewards in time for Free Mod Monday.*
+            </p>
+
+            <button>Join now</button>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="container container2">
+
+        <div style="width:50%; padding:20px;
+        background-color:rgb(39,105,78);">
+
+            <h2 style="font-size:xx-large;
+            text-align:center; color:white;">
+                The Aerocano has arrived
+            </h2>
+
+            <p style="font-size:larger; text-align:center;
+            color:white;">
+                Our smoothest, airiest espresso drink yet.
+                Be one of the first to try the all-new
+                Aerocano in original or caramel. Iced only.
+            </p>
+
+            <button style="font-size:large;
+            outline:2px solid white;
+            background-color:rgb(39,105,78);
+            width:150px; height:40px;
+            border-radius:9999px; margin-left:35%;
+            border:none; color:white;">
+                <b>Start and Order</b>
+            </button>
+        </div>
+
+        <div class="right">
+            <img src="P4.png" alt="Aerocano coffee">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="container container2">
+
+        <div class="left">
+            <img src="p5.png" alt="Aerocano coffee">
+        </div>
+
+        <div style="width:50%; padding:20px;
+        background-color:rgb(39,105,78);">
+
+            <h2 style="font-size:xx-large;
+            text-align:center; color:white;">
+                Fall classics made mini
+            </h2>
+
+            <p style="font-size:larger; text-align:center;
+            color:white;">
+                Introducing Mini Pies. Available in three seasonal
+                flavors: Pumpkin, Pecan and Apple Crumble.
+                Mix and match or enjoy them all.
+            </p>
+
+            <button style="font-size:large;
+            outline:2px solid white;
+            background-color:rgb(39,105,78);
+            width:150px; height:40px;
+            border-radius:9999px; margin-left:35%;
+            border:none; color:white;">
+                <b>Order Now</b>
+            </button>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="container container2">
+
+        <div style="width:50%; padding:20px;
+        background-color:rgb(39,105,78);">
+
+            <h2 style="font-size:xx-large;
+            text-align:center; color:white;">
+                Fall is here. Cue the hits.
+            </h2>
+
+            <p style="font-size:larger; text-align:center;
+            color:white;">
+                Enjoy your drink in the café and get refills of
+                The fall menu is live, with all your favorites and
+                a few delicious surprises. Pumpkin, pecan, banana bread and chaider, here we come.
+            </p>
+
+            <button style="font-size:large;
+            outline:2px solid white;
+            background-color:rgb(39,105,78);
+            width:150px; height:40px;
+            border-radius:9999px; margin-left:35%;
+            border:none; color:white;">
+                <b>Order Now</b>
+            </button>
+        </div>
+
+        <div class="left">
+            <img src="p6.png" alt="Coffee drink">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="container container2">
+
+        <div class="left">
+            <img src="p7.png" alt="coffee">
+        </div>
+
+        <div style="width:50%; padding:20px;
+        background-color:rgb(39,105,78);">
+
+            <h2 style="font-size:xx-large;
+            text-align:center; color:white;">
+                Free refills and fall vibes
+            </h2>
+
+            <p style="font-size:larger; text-align:center;
+            color:white;">
+                Enjoy your drink in the café and get refills of
+                hot or iced brewed coffee or tea on us.
+            </p>
+
+            <button style="font-size:large;
+            outline:2px solid white;
+            background-color:rgb(39,105,78);
+            width:150px; height:40px;
+            border-radius:9999px; margin-left:35%;
+            border:none; color:white;">
+                <b>Order Now</b>
+            </button>
+        </div>
+
+    </div>
+
+    <br>
+
+    <p style="font-size:small; text-align:center;margin-top:100px">
+        <b>*Redeemable at participating stores. Members will receive one free customization each month,</b>
+    </p>
+
+    <p style="font-size:small; text-align:center;">
+        <b>up to $2.25 (pre-tax) each. Not valid for use with Rewards or other offers, discounts or promotions.</b>
+    </p>
+
+    <p style="font-size:small; text-align:center;margin-top:100px">
+        <b>**Free refills of hot and iced brewed coffee and tea during same store visit. Excludes Cold Brew,</b>
+    </p>
+
+    <p style="font-size:small; text-align:center;">
+        <b>Nitro Cold Brew, Iced Tea Lemonade, flavored Iced Tea and Starbucks Refreshers® base. At</b>
+    </p>
+
+    <p style="font-size:small; text-align:center;">
+        <b>participating stores.</b>
+    </p>
+    <hr style="margin-top:100px;color:rgb(77,76,76);">
+
+    <div class="footer" style="background-color:rgb(255,255,255); padding:220px;">
+
+        <div style="text-align:left;margin-top:-160px;margin-left:-170px;">
+            <h3>About Us</h3>
+            <a href="https://www.starbucks.com/about-us">Our Company</a>
+            <br><br>
+            <a href="coffe.com">Our Coffee</a>
+            <br><br>
+            <a href="coffe.com">About Starbucks</a>
+            <br><br>
+            <a href="coffe.com">Starbucks Archive</a>
+        </div>
+
+        <div style="text-align:left;margin-top:-160px;margin-left:70px;">
+            <h3>Careers</h3>
+            <a href="https://www.starbucks.com/about-us">Culture and Values</a>
+            <br><br>
+            <a href="coffe.com">Belonging and Starbucks</a>
+            <br><br>
+            <a href="coffe.com">Collage Achivement Plan</a>
+            <br><br>
+            <a href="coffe.com">Almuni Community</a>
+        </div>
+
+        <div style="text-align:left;margin-top:-160px;margin-left:70px;">
+            <h3>Social Impact</h3>
+            <a href="https://www.starbucks.com/about-us">Culture and Values</a>
+            <br><br>
+            <a href="coffe.com">Belonging and Starbucks</a>
+            <br><br>
+            <a href="coffe.com">Collage Achivement Plan</a>
+            <br><br>
+            <a href="coffe.com">Almuni Community</a>
+        </div>
+
+        <div style="text-align:left;margin-top:-160px;margin-left:70px;">
+            <h3>For Business Partners</h3>
+            <a href="https://www.starbucks.com/about-us">Culture and Values</a>
+            <br><br>
+            <a href="coffe.com">Belonging and Starbucks</a>
+            <br><br>
+            <a href="coffe.com">Collage Achivement Plan</a>
+            <br><br>
+            <a href="coffe.com">Almuni Community</a>
+        </div>
+
+        <div style="text-align:left;margin-top:-160px;margin-left:70px;">
+            <h3>Ways To shop</h3>
+            <a href="https://www.starbucks.com/about-us">Culture and Values</a>
+            <br><br>
+            <a href="coffe.com">Belonging and Starbucks</a>
+            <br><br>
+            <a href="coffe.com">Collage Achivement Plan</a>
+            <br><br>
+            <a href="coffe.com">Almuni Community</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
